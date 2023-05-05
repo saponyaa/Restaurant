@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADISE</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://s.restorating.ru/w/1920x1080/articles/2476/6a6a83d8b196c1ef97c2be8625868f8b.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10 am to 12 pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-red" style="font-size:100px"><br><strong>PARADISE</strong></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-white">Let me see the menu</a></p>
+  </div>
+</header>
+ <!-- Paradise Section -->
+ <div class="w3-row  w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://bistrocharlotte.com/wp-content/uploads/2021/09/2-8-1024x808.jpg.webp" class="w3-round w3-image " alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center"><strong>Paradise</strong></h1><br>
+      <h5 class="w3-center"><strong>Tradition since 1876</strong></h5>
+      <p class="w3-large">The restaurant was opened in 1876, and in the late 19th century it became a key meeting place of the intellectual scene. <span class="w3-tag w3-light-black"></span></p>
+      <p class="w3-large w3-text-black w3-hide-small">“At Paradise we create memories, without unnecessarily intimidating our Guests we encourage and engage in a discussion about interesting life and good taste. We want the “Paradise experience” to become an addictive experience.”</p>
+      
+    </div>
+  </div>
+  
+  <hr>
+  <!-- About Container -->
+<div class="w3-container w3-padding-64 w3-black w3-xlarge" id="about">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+      <p>Paradise is the first restaurant of this type in Warsaw – classic and affordable. In Paradise you can try the most famous French warm dishes, such as ratatouille and Burgundy snails.</p>
+      <p><strong>The Chef?</strong> Mr. Alberto himself<img src="https://www.tasty-team.ru/upload/iblock/675/67554dba11aa0202fe9d91c6820c38b9.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+      <p>We are proud of our interiors.</p>
+      <img src="https://s15.stc.all.kpcdn.net/russia/wp-content/uploads/2023/01/luchshie-restorany-v-Moskve-White-Rabbit.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+      <h1><b>Opening Hours</b></h1>
+      
+      <div class="w3-row">
+        <div class="w3-col s6">
+          <p>Mon & Tue CLOSED</p>
+          <p>Wednesday 10.00 - 24.00</p>
+          <p>Thursday 10:00 - 24:00</p>
+        </div>
+        <div class="w3-col s6">
+          <p>Friday 10:00 - 12:00</p>
+          <p>Saturday 10:00 - 23:00</p>
+          <p>Sunday Closed</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- Menu Container -->
+<div class="w3-container w3-white w3-grayscale w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Main dishes');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Main dishes</div>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Desserts</div>
+       </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+
+      </a>
+    </div>
+
+    <div id="Main dishes" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Halibut baked in Mornay sauce</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$32.50</span></h1>
+      <p class="w3-text-grey">Fillet baked in sauce with cauliflower and pasta, all covered with caper salsa.</p>
+      <hr>
+   
+      <h1><b>Boeuf Bourguignon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$30.50</span></h1>
+      <p class="w3-text-grey">Beef stewed in red wine, stewed vegetables, mashed potatoes.</p>
+      <hr>
+      
+      <h1><b>Provencal Ratatouille with fresh vegetables</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$30.00</span></h1>
+      <p class="w3-text-grey">Stewed vegetables, homemade arugula pesto, and Charlotte bread.</p>
+      <hr>
+
+      <h1><b>Croque-madame</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Traditional roasted turkey sandwich, bechamel sauce, Gruyere cheese and a fried egg set of green salads.</p>
+      <hr>
+
+      <h1><b>Croque-mademoiselle</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Traditional baked zucchini sandwich, bechamel sauce and Gruyere cheese, green salad set.</p>
+      <hr>
+    </div>
+
+    <div id="Starters" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Burgundy snails</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+        <p class="w3-text-grey">Snails baked in garlic and herb butter, Parisian baguette.</p>
+        <hr>
+     
+        <h1><b>Foie à la Charlotte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$18.50</span></h1>
+        <p class="w3-text-grey">Chicken liver mousse with brandy, dried fig jam, 4 slices of bread (with a glass of Muscat wine 29.00).</p>
+        <hr>
+        
+        <h1><b>Assiette de fromages</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$18.00</span></h1>
+        <p class="w3-text-grey">A plate of 4 French cheeses: goat, Pavé 3 Provinces, Gruyère, bleu with grilled Charlotte bread.</p>
+        <hr>
+  
+        <h1><b>Cod brandade</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+        <p class="w3-text-grey">Cod and boiled potato paste, pickled onion, and a slice of rye bread.</p>
+        <hr>
+  
+        <h1><b>Eggs with truffle mayonnaise</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+        <p class="w3-text-grey">Boiled eggs, truffle mayonnaise, fresh tarragon, a slice of gluten-free bread.</p>
+        <hr>
+      </div>
+
+      
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+        <div id="Desserts" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Eclair</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+        <p class="w3-text-grey">strawberry / pistachio / vanilla / chocolate</p>
+        <hr>
+     
+        <h1><b>Croissant fourré</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+        <p class="w3-text-grey">with almonds and rum</p>
+        <hr>
+        
+        <h1><b>Shortbread cookies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+        <p class="w3-text-grey">with lavender / with poppy seeds / with pistachios</p>
+        <hr>
+        
+        <h1><b>White chocolate cheesecake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+        <p class="w3-text-grey"></p>
+      </div><br>
+      <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mimoza</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Beltoure, fresh orange juice, grenadine</p>
+      <hr>
+   
+      <h1><b>Aperol Spritz</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Aperol, Beltoure</p>
+      <hr>
+      
+      <h1><b>Bouvet-Ladubay Cremant de Loire</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Blanc de Blancs, AOC Loire</p>
+      <hr>
+      
+      <h1><b>Henry Leblanc Brut</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Blanc de Blancs, methode Charmat</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-black  w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p><a href="info@paradise.com">info@paradise.com</a></p>
+    <p><a href="paradise_instagram.com">paradise_instagram.com</a></p>
+  
+    <p><a href="+48 882 787 704">Call us at  +48 882 787 704</a></p>
+    
+    <!-- Image of location/map -->
+
+<h1><b>Our location</b></h1>
+<div class="w3-row">
+    <div class="w3-col s6">
+      <p><a href="https://www.google.com/maps/place/Z%C4%85bkowska+37,+03-736+Warszawa/@52.2551994,21.0466493,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc3790d7ea0b:0x6ab285583ceb1817!8m2!3d52.2551994!4d21.0466493!16s%2Fg%2F11c0yyywjx">Zabkowska 37, 03-736 Warszawa</a></p>
+      <img src="https://10619-2.s.cdn12.com/maps/skamiejka-warsaw-map.jpg" class="w3-image " style="width:90%;" id="myMap">
+      </div>
+   
+</div>
+
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-red";
+    }
+    document.getElementById("myLink").click();
+    </script>
+    
+
+</body>
+</html>
+
+    
+</body>
+</html>
